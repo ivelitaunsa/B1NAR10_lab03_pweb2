@@ -29,5 +29,10 @@ app.post('/crear', (request, response) => {
   let tit = request.body.fileName
   let ruta = "archivos/"+tit+".txt"
   console.log(markDownText)
+  try {
+    fs.writeFileSync(ruta, markDownText);
+  } catch (err) {
+    console.error(err);
+  }
 })
 
