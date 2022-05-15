@@ -12,15 +12,44 @@ function listar() {
     let html = `<ul>`
     //Bucle for -> quiero usar el nombre y el indice al mismo tiempo
     for(let i=0;i<lista.length; i++) {
-      html += `<li onclick="verContenido(${i+1}) id="${i+1}">${lista[i]}</li>`
+      html += `<li onclick="verContenido("${i+1}") id="${i+1}">${lista[i]}</li>`
     }
     html += `</ul>`
     //Insertando lista con los archivos disponibles
     document.getElementById("main").innerHTML = html
 
   })
-}
+};
 
+
+//Método verContenido() -> Hara una consulta a ver contenido de un archivo
+//El response estará en formato json y es contenido ya tendrá las etiquetas html
+function verContenido(id) {
+  const url = "http://localhost:3000/ver"
+  //Extraemos el nombre del archivo
+  let nombre = document.getElementById(id).textContent
+
+  //Creamos el objeto donde guardaremos el nombre
+  let objectQuery = {
+    name: nombre,
+  };
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    //Convertivos a json porque en headers le indicamos que le enviariamos un json
+    body: JSON.stringify(objectQuery),
+  })
+  .then(response => response.json())
+  .then(data => {
+    let html = `<h3>${nombre}</h3>`;
+    html += data;
+
+    document.getElementById("main").innerHTML = html
+  })
+};
 
 
 //Método crear() -> Hara la consulta para crear documento
@@ -44,4 +73,4 @@ function crear() {
     //Convertivos a json porque en headers le indicamos que le enviariamos un json
     body: JSON.stringify(archivo),
   });
-}
+};
