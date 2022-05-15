@@ -48,7 +48,13 @@ function enviarData(){
 		return false;
 	}
 
-  function guardar(textM, archiveName){
-    
+  function guardar(contentM, title){
+    const url = 'http://localhost:3000/save'
+	  const data = { 
+		        text: contentM,
+	         	tit: title
+	}
+	console.log(data);
+  
   }
 }
