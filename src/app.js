@@ -28,11 +28,12 @@ app.get('/', (request, response) => {
 app.post('/crear', (request, response) => {
   console.log(request.body);
   let markDownText = request.body.text
+  let htmlText = md.render(markDownText)
   let tit = request.body.name
   let ruta = "archivos/"+tit+".txt"
   console.log(markDownText)
   try {
-    fs.writeFileSync(ruta, markDownText);
+    fs.writeFileSync(ruta, htmlText);
   } catch (err) {
     console.error(err);
   }
@@ -65,7 +66,7 @@ app.post('/ver', (request, response) => {
 	return
       }
       response.json({
-	text: md.render(data)
+	text: data
       })
     })
 })
