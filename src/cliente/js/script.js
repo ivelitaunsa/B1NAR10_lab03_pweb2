@@ -55,7 +55,7 @@ function verContenido(id) {
 //Método crear() -> Hara la consulta para crear documento
 //mandando un json con los datos
 function crear() {
-  const url = "http://localhost:3000/crear"
+const url = "http://localhost:3000/crear"
   //Se extraen los valores de nombre (Texto) y contenido (Texto en markdown)
   let nombre = document.getElementById("name").value
   let texto = document.getElementById("text").value
@@ -65,7 +65,7 @@ function crear() {
     name: nombre,
     text: texto
   }
-  fetch(url, {
+  http = fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -73,4 +73,11 @@ function crear() {
     //Convertivos a json porque en headers le indicamos que le enviariamos un json
     body: JSON.stringify(archivo),
   });
+  http.then(
+    response => response.json()
+  ).then(
+    data => {
+      document.querySelector("#main").innerHTML = data.text
+    }
+  )
 };
