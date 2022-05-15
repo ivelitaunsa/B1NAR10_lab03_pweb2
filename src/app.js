@@ -42,6 +42,12 @@ app.post('/crear', (request, response) => {
 
 app.get('/listar', (request, response) => {
   const ruta = 'archivos';
-  let lista = fs.readdirSync(ruta);
-  console.log(lista);
+  let list = fs.readdirSync(ruta);
+  console.log(list);
+  response.setHeader('Content-Type', 'application/json')
+  response.end(JSON.stringify({
+    lista: list 
+  }))
+
+
 })
