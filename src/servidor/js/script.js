@@ -22,7 +22,7 @@ function showWelcome() {
 function showNew() {
   let html = `
               <h2>Creando Archivo ...</h2>
-							<form action="POST" id="markupForm">
+							<form method="POST" id="markupForm">
               	Nombre del Archivo: <textarea id="fileName" cols="10" rows="3"></textarea><br>
               	Contenido: <textarea id="markupText" cols="50" rows="30"></textarea>
 								<input type="submit" value="Enviar">
