@@ -64,5 +64,8 @@ app.post('/ver', (request, response) => {
 	})
 	return
       }
+      response.json({
+	text: md.render(data)
+      })
     })
 })
