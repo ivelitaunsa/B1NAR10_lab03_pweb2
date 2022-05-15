@@ -29,6 +29,7 @@ function showNew() {
               </form>`
 
   document.getElementById("main").innerHTML = html;
+  //usar enviarData
 }
 function listar() {
   let html = `
@@ -40,4 +41,10 @@ function listar() {
 function enviarData(){ 
 	const text = document.querySelector('#textMarkdown');
 	const name = document.querySelector('#archiveName');
+  document.querySelector('#form').onsubmit = () => {
+		console.log(text.value)
+		console.log(name.value)
+
+		return false;
+	}
 }
