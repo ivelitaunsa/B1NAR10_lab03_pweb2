@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Prueba Express</title>
-		<script>
+<html lang="es">
+<head>
+  <script src="js/script.js"></script>
+	<script>
 			function traducir(markupText) {
-				const url = 'http://localhost:3000/'
-				const data = {
-					text: markupText
-				}
-				console.log(data)
-				const request = {
-					method: 'POST', // Podría ser GET
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify(data),
-				}
-				http = fetch(url, request)
-				http.then(
-					response => response.json()
-				).then(
-					data => {
-						document.querySelector("#htmlCode").innerHTML = data.text
-					}
-    				)
-				}
-				document.addEventListener('DOMContentLoaded', function () {
-    				const text = document.querySelector('#markupText')
-    				document.querySelector('#markupForm').onsubmit = () => {
-        				traducir(text.value)
-        				return false;
-    				}
-				}) 
-		</script>
-	</head>
-	<body>
-		<p>Texto MARKDOWN</p>
-		<form action="POST" id='markupForm'>
-			<input type="text">
-			<textarea id='markupText'></textarea>
-  		<input type="submit" value="Enviar">
-		</form>
-		<div id='htmlCode'></div>
-	</body>
+        const url = 'http://localhost:3000/'
+        const data = {
+          text: markupText
+        }
+        console.log(data)
+        const request = {
+          method: 'POST', // Podría ser GET
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        }
+        http = fetch(url, request)
+        http.then(
+          response => response.json()
+        ).then(
+          data => {
+            document.querySelector("#htmlCode").innerHTML = data.text
+          }
+            )
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('#markupText')
+            document.querySelector('#markupForm').onsubmit = () => {
+                traducir(text.value)
+                return false;
+            }
+        })
+	</script>
+  <meta charset="UTF-8">
+  <title>Gestor de Archivos</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Laboratorio 03</h1>
+    <h2>Navegador de Markdown</h2>
+  </div>
+  <div class="topnav">
+    <p onclick="showWelcome()">Inicio</p>
+    <!-- showNew crea el formulario para entregar el nombre y contenido -->
+    <p onclick="showNew()">Crear Archivo</p>
+    <p onclick="listar()">Listar Archivos</p>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card" id="main">
+        <!-- Aqui dentro el usuario podrá visualizar la info inicial e interacctuar con los archivos -->
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <!-- Informacion de los creadores -->
+      <div class="card">
+        <h2>Autores</h2>
+        <p>Franco Cárdenas Martines - fcardenasm@unsa.edu.pe</p>
+        <p>Bryan Hancco Condori - bhanccoco@unsa.edu.pe</p>
+        <p>Barbara Carrillo Daza - bcarrillo@unsa.edu.pe</p>
+        <p>Eberth Azurin Zuñiga - eazurin@unsa.edu.pe</p>
+        <p>Italo Velita Aguilar - ivelita@unsa.edu.pe</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>UNIVERSIDAD NACIONAL DE SAN AGUSTÍN</p>
+    <p>INGENIERÍA DE SISTEMAS - PROGRAMACIÓN WEB 2</p>
+  </div>
+</body>
 </html>
