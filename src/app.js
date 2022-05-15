@@ -34,5 +34,9 @@ app.post('/crear', (request, response) => {
   } catch (err) {
     console.error(err);
   }
+  response.setHeader('Content-Type', 'application/json')
+  response.end(JSON.stringify({
+    text: "<h1>Guardado</h1>" 
+  }))
 })
 
