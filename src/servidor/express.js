@@ -54,10 +54,19 @@ app.post('/', (request, response) => {
       	  text: "Funciono" 
     	}))
 })
-//ver
+//ver, mostrar
 app.post('/view', (request, response) => {
     var fileName = request.body.text;
     console.log(fileName);
+    fs.readFile(path.resolve(__dirname, 'dat/' + fileName), 'utf8',(err, md) => {
+        if(err){
+          console.log(err);
+          response.status(500).json({
+            error: 'message'
+          })
+          return
+        }
+
       });
   
 
