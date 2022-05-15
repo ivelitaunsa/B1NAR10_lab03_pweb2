@@ -25,5 +25,9 @@ app.get('/', (request, response) => {
 
 app.post('/crear', (request, response) => {
   console.log(request.body);
+  let markDownText = request.body.text
+  let tit = request.body.fileName
+  let ruta = "archivos/"+tit+".txt"
+  console.log(markDownText)
 })
 
