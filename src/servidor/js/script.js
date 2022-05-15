@@ -39,9 +39,9 @@ function listar() {
 
 //extraer cont de lo enviado
 function enviarData(){ 
-	const text = document.querySelector('#textMarkdown');
-	const name = document.querySelector('#archiveName');
-  document.querySelector('#form').onsubmit = () => {
+	const text = document.querySelector('#markupText');
+	const name = document.querySelector('#textName');
+  document.querySelector('#markupForm').onsubmit = () => {
 		console.log(text.value)
 		console.log(name.value)
 
