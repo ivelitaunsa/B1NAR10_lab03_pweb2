@@ -21,22 +21,45 @@ app.listen(3000, () => {
 app.get('/', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'index2.html'))
 })
+
+
 /*app.get('/js/script.js', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'js/script.js'))
 })*/
+
+
 //traduce el texto markdown que le llega y lo envia al cliente
 app.post('/', (request, response) => {
-    console.log(request.body)
-    let markDownText = request.body.text
-    console.log(markDownText)
-    let htmlText = md.render(markDownText)
-    response.setHeader('Content-Type', 'application/json')
-    response.end(JSON.stringify({
-        text: htmlText
-    }))
+    console.log(request.body);
+
+    let markDownText = request.body.text;
+    let tit = request.body.fileName;
+    console.log(markDownText);
+    let ruta = "archivos/"+tit+".txt";
+   
+		try {
+			fs.writeFileSync(ruta, markDownText)
+		} catch (err) {
+			console.error(err)
+		}
+	//prueba 1 elemento
+		try {
+			fs.writeFileSync("archivos/titulos.txt", title)
+		} catch (err) {
+			console.error(err)
+		}
+		
+		response.setHeader('Content-Type', 'application/json')
+    	response.end(JSON.stringify({
+      	  text: "Funciono" 
+    	}))
 })
-
-
+//ver
+app.post('/view', (request, response) => {
+    var fileName = request.body.text;
+    console.log(fileName);
+      });
+  
 
 
 
