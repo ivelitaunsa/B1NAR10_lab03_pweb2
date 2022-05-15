@@ -38,5 +38,6 @@ function listar() {
 
 //extraer cont de lo enviado
 function enviarData(){ 
-	
+	const text = document.querySelector('#textMarkdown');
+	const name = document.querySelector('#archiveName');
 }
