@@ -12,7 +12,7 @@ function listar() {
     let html = `<ul>`
     //Bucle for -> quiero usar el nombre y el indice al mismo tiempo
     for(let i=0;i<lista.length; i++) {
-      html += `<li onclick="verContenido() id="${i+1}">${lista[i]}</li>`
+      html += `<li onclick="verContenido(${i+1}) id="${i+1}">${lista[i]}</li>`
     }
     html += `</ul>`
     //Insertando lista con los archivos disponibles
@@ -20,6 +20,8 @@ function listar() {
 
   })
 }
+
+
 
 //Método crear() -> Hara la consulta para crear documento
 //mandando un json con los datos
