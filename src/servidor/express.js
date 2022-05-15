@@ -1,19 +1,18 @@
 const fs = require('fs')
 const path = require('path')
 const express = require('express')
-//var cors = require('cors');
+var cors = require('cors');
 const bp = require('body-parser')
 const MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
 const app = express()
 
-//app.use(cors());
+app.use(cors());
 app.use(express.static('/'))
 app.use(bp.json())
 app.use(bp.urlencoded({
     extended: true
 }))
-
 app.listen(3000, () => {
     console.log("Escuchando en: http://localhost:3000")
 })
@@ -39,7 +38,7 @@ app.post('/', (request, response) => {
 		}
 		//prueba
 		try {
-			fs.writeFileSync("archivos/titulos.txt", title)
+			fs.writeFileSync("archivos/titulos.txt", fileName)
 		} catch (err) {
 			console.error(err)
 		}
