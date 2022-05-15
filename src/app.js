@@ -1,11 +1,13 @@
 const fs = require('fs')
 const path = require('path')
 const express = require('express')
+const cors = require('cors');
 const bp = require('body-parser')
 const MarkdownIt = require('markdown-it'),
   md = new MarkdownIt();
 const app = express()
 
+app.use(cors())
 app.use(express.static('cliente'))
 app.use(bp.json())
 app.use(bp.urlencoded({
@@ -48,6 +50,19 @@ app.get('/listar', (request, response) => {
   response.end(JSON.stringify({
     lista: list 
   }))
+})
 
-
+app.post('/ver', (request, response) => {
+  let ruta = 'archivos/'+request.body.name;
+  console.log(ruta);
+  fs.readFile(path.resolve(__dirname, ruta), 'utf8',
+    (err, data) => {
+      if (err) {
+	console.error(err)
+	response.status(500).json({
+	  error: 'message'
+	})
+	return
+      }
+    })
 })
