@@ -19,6 +19,9 @@ function showWelcome() {
               </ul>`;
   document.getElementById("main").innerHTML = html;
 }
+function buscar() {
+	console.log("hi");
+}
 function showNew() {
   let html = `
               <h2>Creando Archivo ...</h2>
@@ -48,13 +51,31 @@ function enviarData(){
 		return false;
 	}
 
-  function guardar(contentM, title){
+function guardar(contentM, title){
     const url = 'http://localhost:3000/save'
 	  const data = { 
 		        text: contentM,
 	         	tit: title
 	}
 	console.log(data);
-  
-  }
+  const request = {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+    },
+	
+    body: JSON.stringify(data),
+	}
+
+  fetch(url, request)
+  buscar();
+}
+
+
+
+
+
+
+
+
 }
