@@ -68,8 +68,14 @@ app.post('/view', (request, response) => {
         }
         let markDownText = data;
         console.log(markDownText);
+        let htmlText = md.render(markDownText);
+        response.setHeader('Content-Type', 'application/json');
+        response.end(JSON.stringify({
+            text: htmlText
+           }))
+        })
 
-      });
+      })
   
 
 
