@@ -21,9 +21,9 @@ app.listen(3000, () => {
 app.get('/', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'index.html'))
 })
-/*app.get('/', (request, response) => {
-		console.log("Estoy aqui")
-})*/
+app.get('/js/script.js', (request, response) => {
+    response.sendFile(path.resolve(__dirname, 'js/script.js'))
+})
 //traduce el texto markdown que le llega y lo envia al cliente
 app.post('/', (request, response) => {
     console.log(request.body)
