@@ -44,7 +44,11 @@ function enviarData(){
   document.querySelector('#markupForm').onsubmit = () => {
 		console.log(text.value)
 		console.log(name.value)
-
+    guardar(text.value, name.value);
 		return false;
 	}
+
+  function guardar(textM, archiveName){
+    
+  }
 }
