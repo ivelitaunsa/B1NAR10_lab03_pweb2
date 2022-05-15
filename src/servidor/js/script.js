@@ -21,6 +21,16 @@ function showWelcome() {
 }
 function buscar() {
 	console.log("hi");
+  const url = 'http://localhost:3000/buscar';
+  console.log("hsi");
+  fetch(url).then(
+    response => response.json()
+  ).then(
+    data => {
+      console.log("lista");
+      listar(data);
+    }
+  )
 }
 function showNew() {
   let html = `
@@ -34,7 +44,7 @@ function showNew() {
   document.getElementById("main").innerHTML = html;
   //usar enviarData
 }
-function listar() {
+function listar(data) {
   let html = `
               <h2>Archivos creados:<h2>`
   document.getElementById("main").innerHTML = html;
@@ -50,7 +60,7 @@ function enviarData(){
     guardar(text.value, name.value);
 		return false;
 	}
-
+}
 function guardar(contentM, title){
     const url = 'http://localhost:3000/save'
 	  const data = { 
@@ -72,10 +82,3 @@ function guardar(contentM, title){
 }
 
 
-
-
-
-
-
-
-}
