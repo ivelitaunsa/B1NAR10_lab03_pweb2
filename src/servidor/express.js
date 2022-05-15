@@ -19,11 +19,11 @@ app.listen(3000, () => {
 })
 //Entrega el contenido del index.html al cliente
 app.get('/', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'index.html'))
+    response.sendFile(path.resolve(__dirname, 'index2.html'))
 })
-app.get('/js/script.js', (request, response) => {
+/*app.get('/js/script.js', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'js/script.js'))
-})
+})*/
 //traduce el texto markdown que le llega y lo envia al cliente
 app.post('/', (request, response) => {
     console.log(request.body)
