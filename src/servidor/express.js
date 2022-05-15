@@ -58,7 +58,7 @@ app.post('/', (request, response) => {
 app.post('/view', (request, response) => {
     var fileName = request.body.text;
     console.log(fileName);
-    fs.readFile(path.resolve(__dirname, 'dat/' + fileName), 'utf8',(err, md) => {
+    fs.readFile(path.resolve(__dirname, 'archivos/' + fileName), 'utf8',(err, data) => {
         if(err){
           console.log(err);
           response.status(500).json({
@@ -66,6 +66,8 @@ app.post('/view', (request, response) => {
           })
           return
         }
+        let markDownText = data;
+        console.log(markDownText);
 
       });
   
