@@ -28,6 +28,6 @@ function showNew() {
               <input type="text" id="name"></input> <br>
               <p>Ingrese Texto</p>
               <textarea id="text" cols="50" rows="30"></textarea>
-              <p class="button">Enviar</p>`
+              <p onclick="crear()" class="button">Enviar</p>`
   document.getElementById("main").innerHTML = html;
 }
