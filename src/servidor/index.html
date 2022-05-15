@@ -7,6 +7,7 @@
         const url = 'http://localhost:3000/'
         const data = {
           text: markupText
+					fileName: fileName
         }
         console.log(data)
         const request = {
@@ -27,8 +28,9 @@
         }
         document.addEventListener('DOMContentLoaded', function () {
             const text = document.querySelector('#markupText')
+            const fileName = document.querySelector('#fileName')
             document.querySelector('#markupForm').onsubmit = () => {
-                traducir(text.value)
+                traducir(text.value, fileName.value)
                 return false;
             }
         })
