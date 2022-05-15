@@ -35,3 +35,8 @@ function listar() {
               <h2>Archivos creados:<h2>`
   document.getElementById("main").innerHTML = html;
 }
+
+//extraer cont de lo enviado
+function enviarData(){ 
+	
+}
