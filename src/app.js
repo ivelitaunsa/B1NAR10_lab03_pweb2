@@ -40,3 +40,8 @@ app.post('/crear', (request, response) => {
   }))
 })
 
+app.get('/listar', (request, response) => {
+  const ruta = 'archivos';
+  let lista = fs.readdirSync(ruta);
+  console.log(lista);
+})
