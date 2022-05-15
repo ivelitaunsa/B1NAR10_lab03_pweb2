@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Prueba Express</title>
+		<script>
+			function traducir(markupText) {
+				const url = 'http://localhost:3000/'
+				const data = {
+					text: markupText
+				}
+				console.log(data)
+				const request = {
+					method: 'POST', // Podría ser GET
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(data),
+				}
+				http = fetch(url, request)
+				http.then(
+					response => response.json()
+				).then(
+					data => {
+						document.querySelector("#htmlCode").innerHTML = data.text
+					}
+    				)
+				}
+				document.addEventListener('DOMContentLoaded', function () {
+    				const text = document.querySelector('#markupText')
+    				document.querySelector('#markupForm').onsubmit = () => {
+        				traducir(text.value)
+        				return false;
+    				}
+				}) 
+		</script>
+	</head>
+	<body>
+		<p>Texto MARKDOWN</p>
+		<form action="POST" id='markupForm'>
+			<input type="text">
+			<textarea id='markupText'></textarea>
+  		<input type="submit" value="Enviar">
+		</form>
+		<div id='htmlCode'></div>
+	</body>
+</html>
