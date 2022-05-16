@@ -57,7 +57,7 @@ app.get('/listar', (request,response) => {
 app.post('/ver', (request,response) => {
 	let title = request.body.name
 	console.log(title)
- 	fs.readFile(path.resolve(__dirname, 'archivo/' + title), 'utf8',
+ 	fs.readFile(path.resolve(__dirname, 'archivos/' + title), 'utf8',
         (err, data) => {
             if (err) {
                 console.error(err)
