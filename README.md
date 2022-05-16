@@ -60,14 +60,20 @@
 </theader>
 <tbody>
 <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-    Trabajos individuales (Links de Flipgrid):<br><br>
-    <ul>
-        <li><a href="https://flipgrid.com/a0a18759">Barbara</a></li>
-        <li><a href="https://flipgrid.com/cf11c6f4">Bryan</a></li>
-        <li><a href="https://flipgrid.com/1b670886">Eberth</a></li>
-        <li><a href="https://flipgrid.com/de8ca386">Italo</a></li>
-        <li><a href="https://flipgrid.com/7c92bf67">Franco</a></li>
-    </ul> 
+    ## EJERCICIOS PROPUESTOS
+-   En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
+    1. Listas los archivos Markdown disponibles
+    2. Ver el contenido de un archivo Markdown traducido a HTML
+    3. Crear nuevos archivos MarkDown y almacenarlos en el servidor
+
+-   La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente.
+El cliente debe usar AJAX para sus peticiones
+El servidor debe usar NodeJS
+Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
+
+-   Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
+
+#
     Trabajo Grupal:<br>
     Cada integrante reforzo sus conocimientos en el lenguaje JavaScript, realizando los ejercicios que le tocaron oportunamente,
     a su vez se integraron los conocimientos adquiridos con GitHub y cada uno avanzo en sus propias ramas, para finalmente unir
