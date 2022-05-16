@@ -13,13 +13,13 @@
     </theader>
     <tbody>
         <tr><td colspan="3"><span style="font-weight:bold;">Formato</span>: Guía de Práctica de Laboratorio / Talleres / Centros de Simulación</td></tr>
-        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/03/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLE-002</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
+        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/03/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLE-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
     </tbody>
 </table>
 </div>
 
 <div align="center">
-<span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
+<span style="font-weight:bold;">INFORME DE LABORATORIO</span><br />
 
 <table>
 <theader>
@@ -27,20 +27,20 @@
 </theader>
 <tbody>
 <tr><td>ASIGNATURA:</td><td colspan="5">Progamación Web 2</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">JavaScript</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Ajax y NodeJS</td></tr>
 <tr>
-<td>NÚMERO DE PRÁCTICA:</td><td>02</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+<td>NÚMERO DE PRÁCTICA:</td><td>03</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
 <td>FECHA DE PRESENTACIÓN:</td><td></td><td>HORA DE PRESENTACIÓN:</td><td colspan="3"></td>
 </tr>
 <tr><td colspan="3">INTEGRANTE(s):
 <ul>
-<li>Barbara Carrillo Daza - bcarrillo@unsa.edu.pe</li>
-<li>Bryan Hancco Condori - bhanccoco@unsa.edu.pe</li>
-<li>Eberth Azurin Zuñiga - eazurin@unsa.edu.pe</li>
-<li>Franco Cárdenas Martines - fcardenasm@unsa.edu.pe</li>
-<li>Italo Velita Aguilar - ivelita@unsa.edu.pe</li>
+    <li>Azurin Zuñiga Eberth - eazurin@unsa.edu.pe</li>
+    <li>Cárdenas Martines Franco - fcardenasm@unsa.edu.pe</li>
+    <li>Carrillo Daza Barbara - bcarrillo@unsa.edu.pe</li>
+    <li>Hancco Condori Bryan - bhanccoco@unsa.edu.pe</li>
+    <li>Velita Aguilar Italo - ivelita@unsa.edu.pe</li>
 </ul>
 </td>
 <td>NOTA:</td><td colspan="2"></td>
@@ -82,16 +82,9 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 
   
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
-    ¿Cómo se pueden resolver los warnings?<br>
-    Estando atentos a las recomendaciones que nos indica JSLint, tales como usar bucles while, mejorar la identación, entre otros. El resultado final se ve a
-    continuación.<br>
-    <img src="assets/images/cuestionario_1.jpeg">
-    ¿Se puede modificar la soluciòn usando map?¿Cómo?<br>
-    Si, la funciòn map es muy dinàmica, no es necesario hacer una iteraciòn en un conjunto de datos o objetos para poder agregarlos a un array, por lo que si usamos esta funciòn, la inicializaciòn de longitud de un array no será necesario
+     <pre>                                                                                          </pre>
 <tr><td>III. CONCLUSIONES<br>
-    Con el presente trabajo, cada uno de los integrantes del grupo pudo reforzar sus conocimientos con el
-    lenguaje JavaScript, además adquiriendo las recomendaciones de las buenas prácticas propuestas por JSLint 
-    e investigando acerca de soluciones distintas, por ejemplo con el uso de map
+     <pre>                                                                                          </pre>
     </td></tr>
 </tbody>
 </table>
@@ -112,6 +105,12 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 </div>    
 <p><b>REFERENCIAS Y BIBLIOGRAFÍA</b></p>
 <ul>
-<li>https://www.w3schools.com/js</li>
+    <li>https://www.w3schools.com/nodejs/nodejs_intro.asp</li>
+    <li>https://nodejs.org/en/docs/guides/getting-started-guide/</li>
+    <li>https://nodejs.dev/learn</li>
+    <li>https://www.w3schools.com/js/js_api_fetch.asp</li>
+    <li>https://expressjs.com/es/</li>
+    <li>https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch</li>
+    <li>https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction</li>
 </ul>
 
