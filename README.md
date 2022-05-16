@@ -79,6 +79,7 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
         No fue necesario su uso, en este se envio de manera predeterminada con el Content-Type: text/HTML
     <li>En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?</li>
     <li>¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?</li>
+         Fue ùtil para separar las palabras por espacios en blanco y tambièn para hacer uso de los saltos de lìnea.
     <li>Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?</li>
 </ul>
      <pre>                                                                                          </pre>
