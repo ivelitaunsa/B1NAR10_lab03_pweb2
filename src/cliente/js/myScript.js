@@ -9,7 +9,9 @@ function listar() {
     //El servidor me devuelve el siguiente objeto
     //en fomato json {"lista": [...]}
     let lista = data.lista
-    let html = `<ul>`
+    let html = `
+								<h2>Lista de Archivos</h2>
+									<ul>`
     //Bucle for -> quiero usar el nombre y el indice al mismo tiempo
     for(let i=0;i<lista.length; i++) {
       html += `<li onclick="verContenido('${i+1}')" id="${i+1}">${lista[i]}</li>`
@@ -62,7 +64,7 @@ function crear() {
 
   //Creamos el objeto donde guardaremos la info
   let archivo = {
-    name: nombre,
+    file: nombre,
     text: texto
   }
   http = fetch(url, {
