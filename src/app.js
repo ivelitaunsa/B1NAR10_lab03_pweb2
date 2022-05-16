@@ -3,6 +3,8 @@ const path = require('path')
 const express = require('express')
 var cors = require('cors');
 const bp = require('body-parser')
+const MarkdownIt = require('markdown-it'),
+		md = new MarkdownIt();
 const app = express()
 app.use(cors());
 app.use(express.static('cliente'))
@@ -56,7 +58,6 @@ app.get('/listar', (request,response) => {
 //nos permite visualizar el contenido de los archivos
 app.post('/ver', (request,response) => {
 	let title = request.body.name
-	console.log(title)
  	fs.readFile(path.resolve(__dirname, 'archivos/' + title), 'utf8',
         (err, data) => {
             if (err) {
@@ -66,8 +67,9 @@ app.post('/ver', (request,response) => {
                 })
                 return
             }
+						let htmlText = md.render(data)
             response.json({
-                text: data.replace(/\n/g, '<br>')
+                text: htmlText
             })
         })
     //
