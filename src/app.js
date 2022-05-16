@@ -22,3 +22,9 @@ app.get('/', (request, response) => {
 app.post('/crear', (request,response) => {
   console.log(request.body)
 })
+app.get('/listar', (request,response) => {
+  console.log(request.body)
+})
+app.post('/ver', (request,response) => {
+  console.log(request.body)
+})
