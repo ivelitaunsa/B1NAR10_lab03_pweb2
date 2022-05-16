@@ -72,14 +72,6 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 
 -   Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
 
-#
-    Trabajo Grupal:<br>
-    Cada integrante reforzo sus conocimientos en el lenguaje JavaScript, realizando los ejercicios que le tocaron oportunamente,
-    a su vez se integraron los conocimientos adquiridos con GitHub y cada uno avanzo en sus propias ramas, para finalmente unir
-    todos nuestros avances en el main.<br>
-    Commits de cada integrante:<br><br>
-    <img src="assets/images/commits_lab2.jpg">
-
   
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
 <ul>
