@@ -82,6 +82,13 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 
   
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
+<ul>
+    <li>En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?</li>
+        No fue necesario su uso, en este se envio de manera predeterminada con el Content-Type: text/HTML
+    <li>En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?</li>
+    <li>¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?</li>
+    <li>Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?</li>
+</ul>
      <pre>                                                                                          </pre>
 <tr><td>III. CONCLUSIONES<br>
      <pre>                                                                                          </pre>
