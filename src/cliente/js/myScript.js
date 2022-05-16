@@ -8,7 +8,7 @@ function listar() {
   .then(data => {
     //El servidor me devuelve el siguiente objeto
     //en fomato json {"lista": [...]}
-    let lista = data.lista
+    let lista = data.list
     let html = `
 								<h2>Lista de Archivos</h2>
 									<ul>`
