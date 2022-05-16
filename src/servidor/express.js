@@ -20,17 +20,20 @@ app.listen(3000, () => {
 app.get('/', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'index.html'))
 })
+
 app.get('/js/script.js', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'js/script.js'))
 })
+
 //crea el archivo markdown que le llega y lo guarda en la carpeta archivos
 app.post('/', (request, response) => {
     console.log(request.body)
     let markDownText = request.body.text
-		let fileName = request.body.fileName
+		let fileName = request.body.file
     console.log(markDownText)
 		let ruta = "archivos/" + fileName + ".txt"
     console.log(markDownText)
+		/*
 		try {
 			fs.writeFileSync(ruta, markDownText)
 		} catch (err) {
@@ -42,6 +45,7 @@ app.post('/', (request, response) => {
 		} catch (err) {
 			console.error(err)
 		}
+		*/
     let htmlText = "Funciono!"
     response.setHeader('Content-Type', 'application/json')
     response.end(JSON.stringify({

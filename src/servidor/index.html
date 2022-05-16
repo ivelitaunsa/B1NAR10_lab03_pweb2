@@ -3,34 +3,11 @@
 <head>
   <script src="js/script.js"></script>
 	<script>
-			function traducir(markupText) {
-        const url = 'http://localhost:3000/'
-        const data = {
-          text: markupText
-					fileName: fileName
-        }
-        console.log(data)
-        const request = {
-          method: 'POST', // Podría ser GET
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        }
-        http = fetch(url, request)
-        http.then(
-          response => response.json()
-        ).then(
-          data => {
-            document.querySelector("#htmlCode").innerHTML = data.text
-          }
-            )
-        }
         document.addEventListener('DOMContentLoaded', function () {
             const text = document.querySelector('#markupText')
             const fileName = document.querySelector('#fileName')
             document.querySelector('#markupForm').onsubmit = () => {
-                traducir(text.value, fileName.value)
+                crearArchivo(text.value, fileName.value)
                 return false;
             }
         })
