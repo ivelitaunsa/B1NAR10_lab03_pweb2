@@ -23,16 +23,13 @@ app.post('/crear', (request,response) => {
     console.log(request.body)
     let markDownText = request.body.text
 		let fileName = request.body.file
-    console.log(markDownText)
 		let ruta = "archivos/" + fileName + ".txt"
     console.log(markDownText)
-		/*
 		try {
 			fs.writeFileSync(ruta, markDownText)
 		} catch (err) {
 			console.error(err)
 		}
-		*/
     let htmlText = "Funciono!"
     response.setHeader('Content-Type', 'application/json')
     response.end(JSON.stringify({
@@ -43,7 +40,12 @@ app.post('/crear', (request,response) => {
 })
 //se encarga de enviar la lista de archivos
 app.get('/listar', (request,response) => {
-  console.log(request.body)
+	fs.readdir(path.resolve(__dirname, 'archivos'), (err, files) => {
+  if (err)
+    console.log(err);
+  else {
+  }
+})
 })
 //nos permite visualizar el contenido de los archivos
 app.post('/ver', (request,response) => {
