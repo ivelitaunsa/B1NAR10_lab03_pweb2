@@ -12,7 +12,7 @@ function listar() {
     let html = `<ul>`
     //Bucle for -> quiero usar el nombre y el indice al mismo tiempo
     for(let i=0;i<lista.length; i++) {
-      html += `<li onclick="verContenido("${i+1}") id="${i+1}">${lista[i]}</li>`
+      html += `<li onclick="verContenido('${i+1}')" id="${i+1}">${lista[i]}</li>`
     }
     html += `</ul>`
     //Insertando lista con los archivos disponibles
@@ -42,24 +42,24 @@ function verContenido(id) {
     //Convertivos a json porque en headers le indicamos que le enviariamos un json
     body: JSON.stringify(objectQuery),
   })
-  .then(response => response.json())
-  .then(data => {
-    let html = `<h3>${nombre}</h3>`;
-    html += data;
+    .then(response => response.json())
+    .then(data => {
+      let html = `<h3>${nombre}</h3>`;
+      html += data;
 
-    document.getElementById("main").innerHTML = html
-  })
+      document.getElementById("main").innerHTML = html
+    })
 };
 
 
 //Método crear() -> Hara la consulta para crear documento
 //mandando un json con los datos
 function crear() {
-const url = "http://localhost:3000/crear"
+  const url = "http://localhost:3000/crear"
   //Se extraen los valores de nombre (Texto) y contenido (Texto en markdown)
   let nombre = document.getElementById("name").value
   let texto = document.getElementById("text").value
-  
+
   //Creamos el objeto donde guardaremos la info
   let archivo = {
     name: nombre,
