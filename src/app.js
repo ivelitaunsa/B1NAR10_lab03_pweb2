@@ -55,5 +55,20 @@ app.get('/listar', (request,response) => {
 })
 //nos permite visualizar el contenido de los archivos
 app.post('/ver', (request,response) => {
-  console.log(request.body)
+	let title = request.body.name
+	console.log(title)
+ 	fs.readFile(path.resolve(__dirname, 'archivo/' + title), 'utf8',
+        (err, data) => {
+            if (err) {
+                console.error(err)
+                response.status(500).json({
+                    error: 'message'
+                })
+                return
+            }
+            response.json({
+                text: data.replace(/\n/g, '<br>')
+            })
+        })
+    //
 })
