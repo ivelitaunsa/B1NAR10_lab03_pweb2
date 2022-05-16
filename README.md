@@ -60,7 +60,6 @@
 </theader>
 <tbody>
 <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-    ## EJERCICIOS PROPUESTOS
 -   En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
     1. Listas los archivos Markdown disponibles
     2. Ver el contenido de un archivo Markdown traducido a HTML
