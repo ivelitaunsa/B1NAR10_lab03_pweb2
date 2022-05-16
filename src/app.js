@@ -40,11 +40,17 @@ app.post('/crear', (request,response) => {
 })
 //se encarga de enviar la lista de archivos
 app.get('/listar', (request,response) => {
+	let names
 	fs.readdir(path.resolve(__dirname, 'archivos'), (err, files) => {
   if (err)
-    console.log(err);
+		names = 'Ocurrio un error'
   else {
+		names = files
   }
+  response.setHeader('Content-Type', 'application/json')
+  response.end(JSON.stringify({
+    list: names 
+  }))
 })
 })
 //nos permite visualizar el contenido de los archivos
