@@ -45,7 +45,7 @@ function verContenido(id) {
     .then(response => response.json())
     .then(data => {
       let html = `<h3>${nombre}</h3>`;
-      html += data;
+      html += data.text;
 
       document.getElementById("main").innerHTML = html
     })
