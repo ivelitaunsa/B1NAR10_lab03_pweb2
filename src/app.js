@@ -18,13 +18,34 @@ app.listen(3000, () => {
 app.get('/', (request, response) => {
   response.sendFile(path.resolve(__dirname, '/cliente/index.html'));
 });
-
+//crear los archivos, guardandolos en la carpeta archivos/
 app.post('/crear', (request,response) => {
+    console.log(request.body)
+    let markDownText = request.body.text
+		let fileName = request.body.file
+    console.log(markDownText)
+		let ruta = "archivos/" + fileName + ".txt"
+    console.log(markDownText)
+		/*
+		try {
+			fs.writeFileSync(ruta, markDownText)
+		} catch (err) {
+			console.error(err)
+		}
+		*/
+    let htmlText = "Funciono!"
+    response.setHeader('Content-Type', 'application/json')
+    response.end(JSON.stringify({
+        text: htmlText
+    }))
+
   console.log(request.body)
 })
+//se encarga de enviar la lista de archivos
 app.get('/listar', (request,response) => {
   console.log(request.body)
 })
+//nos permite visualizar el contenido de los archivos
 app.post('/ver', (request,response) => {
   console.log(request.body)
 })
