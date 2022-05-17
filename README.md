@@ -71,7 +71,7 @@ El servidor debe usar NodeJS
 Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
 
 -   Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
-
+    <tr><td>ORGANIZACIÓN<br>Nos dividimos en dos ramas, backend y frontend, en la rama frontend estuvo organizada puesto que 2 se encargaron de ello.<br>En la rama backend, hicimos reuniones para comprender el contexto del proyecto y tratamos de dividirnos puesto que todo se complementaba decidimos crear soluciones por separado y luego se elegirìa la mejor solución, en las reuniones de meet luego vimos cuàl era la que añadirìamos al main.</td></tr>
   
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
 <ul>
