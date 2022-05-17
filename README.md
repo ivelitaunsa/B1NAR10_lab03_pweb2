@@ -59,7 +59,7 @@
 <tr><th>Solución y resultados</th></tr>
 </theader>
 <tbody>
-<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
+<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br><br>
  En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
     <ol>
         <li>Listas los archivos Markdown disponibles</li>
@@ -72,9 +72,9 @@ El servidor debe usar NodeJS. <br>
 Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más. <br>
 Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta. <br>
  </tr></td>
-    <tr><td>ORGANIZACIÓN<br>Nos dividimos en dos ramas, backend y frontend, en la rama frontend estuvo organizada puesto que 2 se encargaron de ello.<br>En la rama backend, hicimos reuniones para comprender el contexto del proyecto y tratamos de dividirnos puesto que todo se complementaba decidimos crear soluciones por separado y luego se elegirìa la mejor solución, en las reuniones de meet luego vimos cuàl era la que añadirìamos al main.</td></tr>
+    <tr><td>ORGANIZACIÓN<br><br>Nos dividimos en dos ramas, backend y frontend, en la rama frontend estuvo organizada puesto que 2 se encargaron de ello.<br>En la rama backend, hicimos reuniones para comprender el contexto del proyecto y tratamos de dividirnos puesto que todo se complementaba decidimos crear soluciones por separado y luego se elegirìa la mejor solución, en las reuniones de meet luego vimos cuàl era la que añadirìamos al main.</td></tr>
   
-<tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
+<tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br><br>
 <ul>
     <li>En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?</li>
         No fue necesario su uso, en este se envio de manera predeterminada con el Content-Type: text/HTML
@@ -87,8 +87,7 @@ Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar 
         Si, lo manera más simple es omitiendo la parte del .setHeader del response, de esa manera la respuesta
         del servidor llegará con el Content-Type: text/HTML de manera predeterminada
 </ul>
-     <pre>                                                                                          </pre>
-<tr><td>III. CONCLUSIONES<br>
+<tr><td>III. CONCLUSIONES<br><br>
      En el proyecto comprendimos NodeJS, también JSON, los cuales fueron indispensables para el desarrollo del proyecto<br>también usamos JavaScript, la cual ya conocìamos desde el anterior semestre, nos dividimos en Back y Front end.
      <br>Cada integrante trabajó en su rama, según la idea de solución que  consideraba.<br>Hicimos reuniones meet, las cuales nos sirvieron para comprender el código y para organizar nuestras ideas.<br>La bibliografía que nos presentó el ingeniero fue de gran ayuda para lograr el desarrollo del laboratorio presentado.
     </td></tr>
