@@ -60,17 +60,18 @@
 </theader>
 <tbody>
 <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
--   En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
-    1. Listas los archivos Markdown disponibles
-    2. Ver el contenido de un archivo Markdown traducido a HTML
-    3. Crear nuevos archivos MarkDown y almacenarlos en el servidor
-
--   La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente.
-El cliente debe usar AJAX para sus peticiones
-El servidor debe usar NodeJS
-Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
-
--   Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
+ En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
+    <ol>
+        <li>Listas los archivos Markdown disponibles</li>
+        <li>Ver el contenido de un archivo Markdown traducido a HTML</li>
+        <li>Crear nuevos archivos MarkDown y almacenarlos en el servidor</li>
+    </ol>
+La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente. <br>
+El cliente debe usar AJAX para sus peticiones. <br>
+El servidor debe usar NodeJS. <br>
+Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más. <br>
+Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta. <br>
+ </tr></td>
     <tr><td>ORGANIZACIÓN<br>Nos dividimos en dos ramas, backend y frontend, en la rama frontend estuvo organizada puesto que 2 se encargaron de ello.<br>En la rama backend, hicimos reuniones para comprender el contexto del proyecto y tratamos de dividirnos puesto que todo se complementaba decidimos crear soluciones por separado y luego se elegirìa la mejor solución, en las reuniones de meet luego vimos cuàl era la que añadirìamos al main.</td></tr>
   
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
