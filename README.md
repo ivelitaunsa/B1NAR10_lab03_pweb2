@@ -78,9 +78,13 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
     <li>En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?</li>
         No fue necesario su uso, en este se envio de manera predeterminada con el Content-Type: text/HTML
     <li>En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?</li>
+        En una carpeta denominada priv, que a su vez debería estar en el mismo directorio donde se ubica e
+        index.html
     <li>¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?</li>
          Fue ùtil para separar las palabras por espacios en blanco y tambièn para hacer uso de los saltos de lìnea.
     <li>Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?</li>
+        Si, lo manera más simple es omitiendo la parte del .setHeader del response, de esa manera la respuesta
+        del servidor llegará con el Content-Type: text/HTML de manera predeterminada
 </ul>
      <pre>                                                                                          </pre>
 <tr><td>III. CONCLUSIONES<br>
