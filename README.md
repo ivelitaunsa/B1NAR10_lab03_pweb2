@@ -84,9 +84,8 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 </ul>
      <pre>                                                                                          </pre>
 <tr><td>III. CONCLUSIONES<br>
-     <pre>En el proyecto comprendimos NodeJS, también JSON, los cuales fueron indispensables para el desarrollo del proyecto<br>también usamos JavaScript, la cual ya conocìamos desde el anterior semestre, nos dividimos en Back y Front end.
-     <br>Cada integrante trabajó en su rama, según la idea de solución que  consideraba.<br>
-     Hicimos reuniones meet, las cuales nos sirvieron para comprender el código y para organizar nuestras ideas.</pre>
+     En el proyecto comprendimos NodeJS, también JSON, los cuales fueron indispensables para el desarrollo del proyecto<br>también usamos JavaScript, la cual ya conocìamos desde el anterior semestre, nos dividimos en Back y Front end.
+     <br>Cada integrante trabajó en su rama, según la idea de solución que  consideraba.<br>Hicimos reuniones meet, las cuales nos sirvieron para comprender el código y para organizar nuestras ideas.<br>La bibliografía que nos presentó el ingeniero fue de gran ayuda para lograr el desarrollo del laboratorio presentado.
     </td></tr>
 </tbody>
 </table>
